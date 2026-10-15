@@ -1,315 +1,287 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light" data-lang="es" color-scheme="light">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Luis Enrique Dalmau Coopat - Full-Stack AI & Computer Vision Specialist</title>
-  <!-- Skip link for accessibility -->
-  <a href="#main-content" class="skip-link" aria-label="Skip to main content">Skip to content</a>
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/themes.css">
-  <link rel="stylesheet" href="assets/css/animations.css">
+  <meta name="description" content="Luis Enrique Dalmau Coopat — Full-Stack AI Engineer & Computer Vision specialist. YOLOv9, FastAPI, React.">
+  <title>Luis Dalmau · Full-Stack AI Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/minimal.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-  <!-- Skip link -->
-  <a href="#main-content" class="skip-link" aria-label="Skip to main content">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Language Toggle -->
-  <div class="lang-toggle" id="langToggle" aria-label="Toggle language">
-    <button class="lang-btn" id="langBtn" aria-expanded="false" aria-label="Toggle language">
-      <span id="langBtnText">ES</span>
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M12 18h-3v-2h3zm0-5h-3V7h3zm6.5-3c0-1.1-.9-2-2-2s-2 .9-2 2h-5v4h5c1.1 0 2 .9 2 2z"/>
-        <path d="M17 13h2.5l-1.7 2.6-1.3-2H14v1.9h3z"/>
-      </svg>
-    </button>
-  </div>
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="#main" class="nav__logo" aria-label="Luis Dalmau — home">
+        <span class="nav__logo-mark">LD</span>
+        <span class="nav__logo-text">luis<span class="dot">.</span>dalmau</span>
+      </a>
 
-  <!-- Theme Toggle with prefers-color-scheme support -->
-  <div class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-    <button class="theme-btn" id="themeBtn" aria-pressed="false" aria-label="Toggle theme">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" id="moonIcon">
-        <circle cx="12" cy="12" r="5"/>
-        <line x1="12" y1="1" x2="12" y2="3"/>
-        <line x1="12" y1="21" x2="12" y2="23"/>
-        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-        <line x1="1" y1="12" x2="3" y2="12"/>
-        <line x1="21" y1="12" x2="23" y2="12"/>
-        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-      </svg>
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" id="sunIcon" style="display:none;">
-        <circle cx="12" cy="12" r="11"/>
-        <line x1="12" y1="8" x2="12.01" y2="8"/>
-        <line x1="12" y1="16" x2="12.01" y2="16"/>
-      </svg>
-    </button>
-  </div>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about" class="nav__link" data-en="About" data-es="Sobre mí">About</a>
+        <a href="#experience" class="nav__link" data-en="Experience" data-es="Experiencia">Experience</a>
+        <a href="#projects" class="nav__link" data-en="Projects" data-es="Proyectos">Projects</a>
+        <a href="#skills" class="nav__link" data-en="Skills" data-es="Habilidades">Skills</a>
+        <a href="#contact" class="nav__link" data-en="Contact" data-es="Contacto">Contact</a>
+      </nav>
 
-  <!-- Main content area -->
-  <main id="main-content">
-    <!-- Header -->
-    <header class="main-header">
-      <div class="container">
-        <nav class="navbar">
-          <div class="logo">
-            <span class="initials">LUKE</span>
-          </div>
-          <ul class="nav-links" id="navLinks">
-            <li><a href="#about" class="smooth-scroll">About</a></li>
-            <li><a href="#experience" class="smooth-scroll">Experience</a></li>
-            <li><a href="#projects" class="smooth-scroll">Projects</a></li>
-            <li><a href="#skills" class="smooth-scroll">Skills</a></li>
-            <li><a href="#contact" class="smooth-scroll">Contact</a></li>
-          </ul>
-          <a href="assets/cv/Luis_Dalmau_CV.pdf" class="btn-download" download="Luis_Dalmau_CV.pdf" aria-label="Download CV" type="application/pdf">
-            <i class="fas fa-file-pdf"></i> Download CV
-          </a>
-        </nav>
+      <div class="nav__actions">
+        <div class="seg" role="group" aria-label="Language">
+          <button class="seg__btn" data-setlang="en" aria-pressed="false">EN</button>
+          <button class="seg__btn" data-setlang="es" aria-pressed="false">ES</button>
+        </div>
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle color theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <a href="assets/cv/Luis_Dalmau_CV.pdf" class="btn btn--primary nav__cv" download>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></svg>
+          <span data-en="CV" data-es="CV">CV</span>
+        </a>
+        <button class="icon-btn nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-      <div class="container">
-        <div class="hero-content">
-          <div class="hero-intro">
-            <h1 class="hero-title" id="heroTitle">Full-Stack Developer<br><span class="speciality" id="speciality">AI & Computer Vision</span></h1>
-            <p class="hero-sub" id="heroSub">Building intelligent systems with Python, FastAPI, and YOLOv9 for IIoT predictive maintenance</p>
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow reveal">
+            <span class="pulse"></span>
+            <span data-en="Available for AI · CV · Full-Stack roles" data-es="Disponible para roles de IA · CV · Full-Stack">Available for AI · CV · Full-Stack roles</span>
+          </p>
+          <h1 class="hero__title reveal">
+            <span data-en="Luis Enrique" data-es="Luis Enrique">Luis Enrique</span>
+            <span class="hero__name">Dalmau Coopat</span>
+          </h1>
+          <p class="hero__role reveal">
+            <span data-en="Full-Stack AI Engineer" data-es="Ingeniero Full-Stack de IA">Full-Stack AI Engineer</span>
+            <span class="hero__role-accent" data-en="· Computer Vision · YOLOv9" data-es="· Computer Vision · YOLOv9">· Computer Vision · YOLOv9</span>
+          </p>
+          <p class="hero__desc reveal" data-en="I build production computer-vision models and full-stack systems — from YOLOv9 detection pipelines for industrial IIoT to FastAPI + React platforms with role-based access." data-es="Construyo modelos de visión por computadora y sistemas full-stack en producción: desde pipelines YOLOv9 para IIoT industrial hasta plataformas FastAPI + React con control de acceso por roles.">I build production computer-vision models and full-stack systems — from YOLOv9 detection pipelines for industrial IIoT to FastAPI + React platforms with role-based access.</p>
+          <div class="hero__actions reveal">
+            <a href="#projects" class="btn btn--primary">
+              <span data-en="View my work" data-es="Ver proyectos">View my work</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#contact" class="btn btn--ghost" data-en="Get in touch" data-es="Contáctame">Get in touch</a>
           </div>
-          <div class="hero-actions">
-            <a href="#about" class="btn btn-primary smooth-scroll">About Me</a>
-            <a href="#projects" class="btn btn-secondary smooth-scroll">Projects</a>
+          <div class="hero__socials reveal">
+            <a class="chip" href="https://github.com/lukedalmau" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+              GitHub
+            </a>
+            <a class="chip" href="https://linkedin.com/in/luis-enrique-dalmau-coopat-programmer" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-1 1.8-2.2 3.8-2.2 4 0 4.8 2.6 4.8 6V24h-4v-8.5c0-2-.1-4.6-2.8-4.6-2.8 0-3.2 2.2-3.2 4.4V24h-4V8z"/></svg>
+              LinkedIn
+            </a>
+            <a class="chip" href="mailto:lukedalmau@gmail.com">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              Email
+            </a>
           </div>
         </div>
-        <div class="hero-image">
-          <div class="image-placeholder" id="heroImage">
-            <div class="initials-circle">
-              <span class="initials-lg">LED</span>
+
+        <div class="hero__panel reveal">
+          <div class="monogram">
+            <span class="monogram__letters">LD</span>
+            <div class="monogram__ring" aria-hidden="true"></div>
+          </div>
+          <div class="hero__panel-row">
+            <span class="kv"><span class="kv__k" data-en="focus" data-es="enfoque">focus</span><span class="kv__v">Computer Vision</span></span>
+            <span class="kv"><span class="kv__k" data-en="base" data-es="base">base</span><span class="kv__v">Málaga, ES</span></span>
+            <span class="kv"><span class="kv__k">yrs</span><span class="kv__v">3+</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index">01</span>
+          <h2 class="section__title" data-en="About me" data-es="Sobre mí">About me</h2>
+        </div>
+        <div class="about">
+          <div class="about__text reveal">
+            <p data-en="Full-Stack AI Engineer with 3+ years building production systems across computer vision, ML pipelines, and web applications. I authored <code>sorba_ml_vision_restlib</code>, a proprietary computer-vision library used to train and deploy <strong>YOLOv9</strong> object-detection models for industrial IIoT predictive maintenance." data-es="Ingeniero Full-Stack de IA con más de 3 años construyendo sistemas en producción: visión por computadora, pipelines de ML y aplicaciones web. Soy autor de <code>sorba_ml_vision_restlib</code>, una librería propietaria de visión por computadora para entrenar y desplegar modelos <strong>YOLOv9</strong> en mantenimiento predictivo industrial (IIoT).">Full-Stack AI Engineer with 3+ years building production systems across computer vision, ML pipelines, and web applications. I authored <code>sorba_ml_vision_restlib</code>, a proprietary computer-vision library used to train and deploy <strong>YOLOv9</strong> object-detection models for industrial IIoT predictive maintenance.</p>
+            <p data-en="B.S. in Computer Science from the University of Havana, plus hands-on MLOps and a teaching background in AI, ML, and distributed systems. Bilingual in Spanish and English." data-es="Licenciado en Ciencia de la Computación por la Universidad de La Habana, con experiencia práctica en MLOps y formación docente en IA, ML y sistemas distribuidos. Bilingüe (español e inglés).">B.S. in Computer Science from the University of Havana, plus hands-on MLOps and a teaching background in AI, ML, and distributed systems. Bilingual in Spanish and English.</p>
+            <ul class="about__list">
+              <li data-en="Authored a proprietary CV library (300+ commits)" data-es="Autor de una librería de CV propietaria (300+ commits)">Authored a proprietary CV library (300+ commits)</li>
+              <li data-en="Shipped a logistics platform (750+ commits)" data-es="Entregué una plataforma logística (750+ commits)">Shipped a logistics platform (750+ commits)</li>
+              <li data-en="YOLOv9 · FastAPI · React · PostgreSQL · Docker" data-es="YOLOv9 · FastAPI · React · PostgreSQL · Docker">YOLOv9 · FastAPI · React · PostgreSQL · Docker</li>
+            </ul>
+          </div>
+          <div class="about__stats">
+            <div class="stat reveal">
+              <span class="stat__num" data-count="1600" data-suffix="+">0</span>
+              <span class="stat__label" data-en="Git commits" data-es="Commits en Git">Git commits</span>
             </div>
-            <div class="image-overlay">
-              <span class="hover-text">View profile</span>
+            <div class="stat reveal">
+              <span class="stat__num" data-count="27" data-suffix="+">0</span>
+              <span class="stat__label" data-en="Repositories" data-es="Repositorios">Repositories</span>
+            </div>
+            <div class="stat reveal">
+              <span class="stat__num" data-count="3" data-suffix="+">0</span>
+              <span class="stat__label" data-en="Years experience" data-es="Años de experiencia">Years experience</span>
+            </div>
+            <div class="stat reveal">
+              <span class="stat__num" data-count="15" data-suffix="+">0</span>
+              <span class="stat__label" data-en="Projects shipped" data-es="Proyectos entregados">Projects shipped</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section section--alt" id="experience">
       <div class="container">
-        <div class="section-header">
-          <h2 class="section-title" id="sectionTitle">About Me</h2>
-          <div class="section-divider"></div>
-        </div>
-        <div class="about-content">
-          <div class="about-text" id="aboutText">
-            <p>Luis Enrique Dalmau Coopat is a Full-Stack Developer with specialization in Artificial Intelligence and Computer Vision. Currently working on YOLOv9 object detection models for IIoT predictive maintenance and integrating computer vision solutions into industrial platforms.</p>
-            <p>With three years of experience in backend development using Python and FastAPI, and a strong foundation in computer science from the University of Havana, Luis combines technical expertise with a passion for innovative technology solutions.</p>
-            <div class="divider-small"></div>
-            <p><strong>📍 Location:</strong> Havana, Cuba | <strong>🌐</strong> Remote available</p>
-            <p><strong>📧</strong> <a href="mailto:lukedalmau@gmail.com">lukedalmau@gmail.com</a></p>
-            <p><strong>📞</strong> +53 5 396 2022</p>
-          </div>
-          <div class="about-stats">
-            <div class="stat-item">
-              <div class="stat-number" data-count="3">0</div>
-              <div class="stat-label">Years Experience</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number" data-count="15">0</div>
-              <div class="stat-label">Projects Built</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number" data-count="5">0</div>
-              <div class="stat-label">Tech Stacks</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="experience" id="experience">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Experience</h2>
-          <div class="section-divider"></div>
+        <div class="section__head reveal">
+          <span class="section__index">02</span>
+          <h2 class="section__title" data-en="Experience" data-es="Experiencia">Experience</h2>
         </div>
         <div class="timeline">
-          <!-- SORBA LLC -->
-          <div class="timeline-item" data-lang-es="Sorbotics LLC" data-lang-en="Sorbotics LLC">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-year">01/2024 – Present</div>
-              <h3 class="timeline-title">Pasante en I+D (Research Intern)</h3>
-              <div class="company-name">Sorbotics LLC • Jacksonville, USA</div>
-              <p class="timeline-desc" data-lang-es="Desarrollo de modelos YOLOv9 para detección de objetos en entornos IIoT. Integración con sorba_ml_vision_restlib 0.3.17. Resolución de dependencias de entorno (symlinks, paths de pesos). Arquitectura de pipeline de entrenamiento e inferencia. Gestión de certificados TLS para conexiones de nodos remotos. Experimentación con tres pathways de solución para problemas de modelo." data-lang-en="Developed YOLOv9 object detection models for IIoT predictive maintenance. Integrated with sorba_ml_vision_restlib 0.3.17. Resolved environment dependency issues (symlinks, weight paths). Built training and inference pipeline architecture. Managed TLS certificates for remote node connections. Experimented with three solution pathways for model issues.">
-              </p>
+          <div class="timeline__item reveal">
+            <span class="timeline__dot"></span>
+            <div class="timeline__meta">
+              <span class="timeline__year">2024 — Now</span>
+            </div>
+            <div class="timeline__card">
+              <h3 data-en="AI Engineer · Computer Vision" data-es="Ingeniero de IA · Computer Vision">AI Engineer · Computer Vision</h3>
+              <span class="timeline__company">SORBA.ai · Sorbotics LLC — Jacksonville, USA (Remote)</span>
+              <p data-en="Author of <code>sorba_ml_vision_restlib</code> (YOLOv9 training/inference, auto-labeling with GroundingDINO & Florence-2, synthetic data with Stable Diffusion, GPU/VRAM scheduling). Built SGE vision nodes for real-time video: object detection, OCR, pose/depth estimation, ByteTrack tracking. Resolved CUDA/dependency issues across isolated environments; managed TLS for remote nodes." data-es="Autor de <code>sorba_ml_vision_restlib</code> (entrenamiento/inferencia YOLOv9, auto-etiquetado con GroundingDINO y Florence-2, datos sintéticos con Stable Diffusion, gestión de GPU/VRAM). Construí nodos de visión SGE para video en tiempo real: detección de objetos, OCR, estimación de pose/profundidad y seguimiento ByteTrack. Resolví dependencias CUDA entre entornos aislados y gestioné TLS para nodos remotos.">Author of <code>sorba_ml_vision_restlib</code> (YOLOv9 training/inference, auto-labeling with GroundingDINO & Florence-2, synthetic data with Stable Diffusion, GPU/VRAM scheduling). Built SGE vision nodes for real-time video: object detection, OCR, pose/depth estimation, ByteTrack tracking. Resolved CUDA/dependency issues across isolated environments; managed TLS for remote nodes.</p>
+              <div class="tags"><span>PyTorch</span><span>YOLOv9</span><span>OpenCV</span><span>Docker</span><span>Redis</span></div>
             </div>
           </div>
 
-          <!-- Freelance -->
-          <div class="timeline-item" data-lang-es="Aerial Underground Construction" data-lang-en="Aerial Underground Construction">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-year">09/2024 – Present</div>
-              <h3 class="timeline-title">Full-Stack Developer (Backend Focus)</h3>
-              <div class="company-name">Aerial Underground Construction Inc. • Kissimmee, FL, USA</div>
-              <p class="timeline-desc" data-lang-es="Desarrollo de backend con Python/FastAPI y Alembic para migraciones de base de datos. Contribución del 35% al frontend con React/TypeScript. Integración de APIs y gestión de errores. Experiencia en IA y Computer Vision: integración de modelos YOLOv9 para optimización de procesos industriales." data-lang-en="Built backend with Python/FastAPI and Alembic for database migrations. Contributed 35% to frontend with React/TypeScript. API integration and error management. AI & Computer Vision experience: YOLOv9 model integration for industrial process optimization.">
-              </p>
+          <div class="timeline__item reveal">
+            <span class="timeline__dot"></span>
+            <div class="timeline__meta">
+              <span class="timeline__year">2024 — Now</span>
+            </div>
+            <div class="timeline__card">
+              <h3 data-en="Full-Stack Developer (Backend focus)" data-es="Desarrollador Full-Stack (enfoque backend)">Full-Stack Developer (Backend focus)</h3>
+              <span class="timeline__company">Aerial Underground Construction Inc. — Kissimmee, FL, USA (Remote)</span>
+              <p data-en="Built a logistics platform with FastAPI + SQLAlchemy + Alembic + PostgreSQL (430+ commits): JWT auth, RBAC across 3 roles, and 20+ REST endpoints. Implemented commission calculation, daily/weekly/monthly reports, PDF/Excel invoices, AWS S3 storage and scheduled jobs. Contributed ~35% of a Next.js 14 + React + TypeScript frontend (310+ commits) with automated tests and Docker/Heroku deployment." data-es="Construí una plataforma logística con FastAPI + SQLAlchemy + Alembic + PostgreSQL (más de 430 commits): autenticación JWT, RBAC con 3 roles y más de 20 endpoints REST. Implementé cálculo de comisiones, reportes diarios/semanales/mensuales, facturas en PDF/Excel, almacenamiento AWS S3 y tareas programadas. Contribuí ~35% del frontend Next.js 14 + React + TypeScript (más de 310 commits) con tests automatizados y despliegue Docker/Heroku.">Built a logistics platform with FastAPI + SQLAlchemy + Alembic + PostgreSQL (430+ commits): JWT auth, RBAC across 3 roles, and 20+ REST endpoints. Implemented commission calculation, daily/weekly/monthly reports, PDF/Excel invoices, AWS S3 storage and scheduled jobs. Contributed ~35% of a Next.js 14 + React + TypeScript frontend (310+ commits) with automated tests and Docker/Heroku deployment.</p>
+              <div class="tags"><span>FastAPI</span><span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>AWS S3</span></div>
             </div>
           </div>
 
-          <!-- University -->
-          <div class="timeline-item" data-lang-es="University of Havana" data-lang-en="University of Havana">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-year">01/2023 – 09/2024</div>
-              <h3 class="timeline-title">Teaching Assistant</h3>
-              <div class="company-name">Facultad de Matemática y Computación • University of Havana • Havana, Cuba</div>
-              <p class="timeline-desc" data-lang-es="Apoyo al profesor principal en la organización y realización de clases prácticas, calificación de exámenes y asistencia a estudiantes. Colaboración en investigaciones y proyectos privados con otras instituciones." data-lang-en="Supported main professor in organizing and conducting practical classes, grading exams, and assisting students. Collaborated on research and private projects with other institutions.">
-              </p>
+          <div class="timeline__item reveal">
+            <span class="timeline__dot"></span>
+            <div class="timeline__meta">
+              <span class="timeline__year">2023 — 2024</span>
             </div>
-          </div>
-
-          <!-- Education -->
-          <div class="timeline-item" data-lang-es="Education" data-lang-en="Education">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-year">09/2017 – 12/2022</div>
-              <h3 class="timeline-title">Licenciatura en Ciencia de la Computación</h3>
-              <div class="company-name">University of Havana • Havana, Cuba</div>
-              <p class="timeline-desc" data-lang-es="Thesis: 'Generación gráfica de señas de la Lengua de Senas Cubana: un primer enfoque' (03/2022–12/2022). Courses: CS50's AI with Python (HarvardX), Sololearn Data Science & ML certificates." data-lang-en="B.S. in Computer Science, University of Havana. Thesis: 'Graphic generation of signs of the Cuban Sign Language: a first approach' (03/2022–12/2022). Courses: CS50's Introduction to AI with Python (HarvardX), Sololearn Data Science & ML certificates.">
-              </p>
+            <div class="timeline__card">
+              <h3 data-en="Teaching Assistant" data-es="Asistente de Profesor">Teaching Assistant</h3>
+              <span class="timeline__company">University of Havana — Faculty of Mathematics & Computer Science</span>
+              <p data-en="Assisted Computer Networks, Machine Learning, Artificial Intelligence, Operating Systems, and Distributed Systems. Led practical classes, graded exams, mentored students, and collaborated on cross-institutional research." data-es="Apoyé en Redes de Computadoras, Aprendizaje Automático, Inteligencia Artificial, Sistemas Operativos y Sistemas Distribuidos. Impartí clases prácticas, califiqué exámenes, mentoricé estudiantes y colaboré en investigaciones interinstitucionales.">Assisted Computer Networks, Machine Learning, Artificial Intelligence, Operating Systems, and Distributed Systems. Led practical classes, graded exams, mentored students, and collaborated on cross-institutional research.</p>
+              <div class="tags"><span>Teaching</span><span>ML</span><span>AI</span><span>Distributed Systems</span></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section" id="projects">
       <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Projects</h2>
-          <div class="section-divider"></div>
+        <div class="section__head reveal">
+          <span class="section__index">03</span>
+          <h2 class="section__title" data-en="Selected projects" data-es="Proyectos destacados">Selected projects</h2>
         </div>
-        <div class="projects-grid" id="projectsGrid">
-          <!-- Projects will be populated by JS -->
-        </div>
+        <div class="projects" id="projectsGrid"></div>
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section section--alt" id="skills">
       <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Skills</h2>
-          <div class="section-divider"></div>
+        <div class="section__head reveal">
+          <span class="section__index">04</span>
+          <h2 class="section__title" data-en="Skills" data-es="Habilidades">Skills</h2>
         </div>
-        <div class="skills-content">
-          <div class="skills-left">
-            <div class="language-badge" id="esBadge" data-lang="es">ES</div>
-            <div class="language-badge" id="enBadge" data-lang="en" style="display:none;">EN</div>
-            
-            <div class="skill-category">
-              <h3>Programming Languages</h3>
-              <div class="skill-bars">
-                <div class="skill-bar"><span>Python <span class="skill-percent">95%</span></span></div>
-                <div class="skill-bar"><span>C# <span class="skill-percent">80%</span></span></div>
-                <div class="skill-bar"><span>JavaScript <span class="skill-percent">70%</span></span></div>
-              </div>
-            </div>
-            
-            <div class="skill-category">
-              <h3>AI & Computer Vision</h3>
-              <div class="skill-bars">
-                <div class="skill-bar"><span>Computer Vision <span class="skill-percent">85%</span></span></div>
-                <div class="skill-bar"><span>YOLOv9 <span class="skill-percent">80%</span></span></div>
-                <div class="skill-bar"><span>OpenCV <span class="skill-percent">75%</span></span></div>
-              </div>
-            </div>
-            
-            <div class="skill-category">
-              <h3>Frameworks & Tools</h3>
-              <div class="skill-bars">
-                <div class="skill-bar"><span>FastAPI <span class="skill-percent">90%</span></span></div>
-                <div class="skill-bar"><span>Django <span class="skill-percent">85%</span></span></div>
-                <div class="skill-bar"><span>Docker <span class="skill-percent">80%</span></span></div>
-              </div>
+        <div class="skills">
+          <div class="skills__group reveal">
+            <h3 data-en="AI & Computer Vision" data-es="IA y Computer Vision">AI & Computer Vision</h3>
+            <div class="skills__chips">
+              <span>YOLOv9</span><span>PyTorch</span><span>OpenCV</span><span>Object Detection</span><span>Image Segmentation</span><span>GroundingDINO</span><span>SAM</span><span>Florence-2</span><span>Stable Diffusion</span><span>Albumentations</span><span>TensorBoard</span><span>scikit-learn</span>
             </div>
           </div>
-          
-          <div class="skills-right">
-            <div class="skill-category">
-              <h3>Databases & DevOps</h3>
-              <div class="skill-bars">
-                <div class="skill-bar"><span>PostgreSQL <span class="skill-percent">80%</span></span></div>
-                <div class="skill-bar"><span>Alembic <span class="skill-percent">85%</span></span></div>
-                <div class="skill-bar"><span>Linux Systems <span class="skill-percent">75%</span></span></div>
-              </div>
+          <div class="skills__group reveal">
+            <h3 data-en="Backend" data-es="Backend">Backend</h3>
+            <div class="skills__chips">
+              <span>FastAPI</span><span>SQLAlchemy</span><span>Alembic</span><span>Django</span><span>Pydantic</span><span>REST APIs</span><span>JWT / OAuth2</span><span>APScheduler</span>
             </div>
-            
-            <div class="skill-category">
-              <h3>Soft Skills</h3>
-              <ul class="soft-skills">
-                <li><i class="fas fa-check"></i> Problem Solver</li>
-                <li><i class="fas fa-check"></i> Team Worker</li>
-                <li><i class="fas fa-check"></i> Effective Collaborator</li>
-                <li><i class="fas fa-check"></i> Quick Learner</li>
-              </ul>
+          </div>
+          <div class="skills__group reveal">
+            <h3 data-en="Frontend" data-es="Frontend">Frontend</h3>
+            <div class="skills__chips">
+              <span>React</span><span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span><span>TanStack Query</span><span>Formik</span><span>Chart.js</span>
+            </div>
+          </div>
+          <div class="skills__group reveal">
+            <h3 data-en="Data & Databases" data-es="Datos y bases de datos">Data & Databases</h3>
+            <div class="skills__chips">
+              <span>PostgreSQL</span><span>MongoDB</span><span>MySQL</span><span>Redis</span><span>pandas</span><span>NumPy</span>
+            </div>
+          </div>
+          <div class="skills__group reveal">
+            <h3 data-en="DevOps & Tooling" data-es="DevOps y herramientas">DevOps & Tooling</h3>
+            <div class="skills__chips">
+              <span>Docker</span><span>Docker Compose</span><span>Git</span><span>GitLab CI</span><span>Heroku</span><span>AWS S3</span><span>Nginx</span><span>Linux</span>
+            </div>
+          </div>
+          <div class="skills__group reveal">
+            <h3 data-en="Testing & Quality" data-es="Testing y calidad">Testing & Quality</h3>
+            <div class="skills__chips">
+              <span>pytest</span><span>pytest-asyncio</span><span>pytest-cov</span><span>moto</span><span>httpx</span><span>ESLint</span><span>Prettier</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section" id="contact">
       <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Contact</h2>
-          <div class="section-divider"></div>
+        <div class="section__head reveal">
+          <span class="section__index">05</span>
+          <h2 class="section__title" data-en="Let's work together" data-es="Trabajemos juntos">Let's work together</h2>
         </div>
-        <div class="contact-content">
-          <div class="contact-info">
-            <div class="contact-item">
-              <i class="fas fa-envelope"></i>
-              <div>
-                <span>Email:</span>
-                <a href="mailto:lukedalmau@gmail.com">lukedalmau@gmail.com</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <i class="fas fa-phone"></i>
-              <div>
-                <span>Phone:</span>
-                <a href="tel:+5353962022">+53 5 396 2022</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <div>
-                <span>Location:</span>
-                Havana, Cuba
-              </div>
-            </div>
-          </div>
-          <div class="social-links">
-            <a href="https://github.com/LukeDalmau" class="social-link" target="_blank" aria-label="GitHub">
-              <i class="fab fa-github"></i>
+        <div class="contact reveal">
+          <p class="contact__lead" data-en="Open to AI Engineer, Computer Vision Engineer, and Full-Stack roles — remote across the EU and US. Let's talk about building intelligent systems." data-es="Abierto a roles de Ingeniero de IA, Ingeniero de Computer Vision y Full-Stack — remoto en la UE y EE. UU. Hablemos de construir sistemas inteligentes.">Open to AI Engineer, Computer Vision Engineer, and Full-Stack roles — remote across the EU and US. Let's talk about building intelligent systems.</p>
+          <div class="contact__cards">
+            <a class="contact__card" href="mailto:lukedalmau@gmail.com">
+              <span class="contact__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+              <span class="contact__label" data-en="Email" data-es="Correo">Email</span>
+              <span class="contact__value">lukedalmau@gmail.com</span>
             </a>
-            <a href="https://linkedin.com/in/luis-enrique-dalmau-coopat-programmer" class="social-link" target="_blank" aria-label="LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
+            <a class="contact__card" href="tel:+34613826894">
+              <span class="contact__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 2z"/></svg></span>
+              <span class="contact__label" data-en="Phone" data-es="Teléfono">Phone</span>
+              <span class="contact__value">+34 613 826 894</span>
             </a>
-            <a href="https://twitter.com/LukeDalmau" class="social-link" target="_blank" aria-label="Twitter">
-              <i class="fab fa-twitter"></i>
+            <a class="contact__card" href="https://github.com/lukedalmau" target="_blank" rel="noopener">
+              <span class="contact__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg></span>
+              <span class="contact__label">GitHub</span>
+              <span class="contact__value">github.com/lukedalmau</span>
+            </a>
+            <a class="contact__card" href="https://linkedin.com/in/luis-enrique-dalmau-coopat-programmer" target="_blank" rel="noopener">
+              <span class="contact__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-1 1.8-2.2 3.8-2.2 4 0 4.8 2.6 4.8 6V24h-4v-8.5c0-2-.1-4.6-2.8-4.6-2.8 0-3.2 2.2-3.2 4.4V24h-4V8z"/></svg></span>
+              <span class="contact__label">LinkedIn</span>
+              <span class="contact__value">in/luis-enrique-dalmau-coopat-programmer</span>
             </a>
           </div>
         </div>
@@ -317,30 +289,12 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="main-footer">
-    <div class="container">
-      <div class="footer-content">
-        <p class="footer-text" id="footerText">2024 Luis Enrique Dalmau Coopat. All rights reserved.</p>
-        <p class="footer-version" id="footerVersion"></p>
-      </div>
-      <div class="footer-top" id="footerTop">
-        <span>Built with ❤️ for AI & Computer Vision</span>
-      </div>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span data-en="© 2026 Luis Enrique Dalmau Coopat" data-es="© 2026 Luis Enrique Dalmau Coopat">© 2026 Luis Enrique Dalmau Coopat</span>
+      <span class="footer__note" data-en="Built with ❤ · AI & Computer Vision" data-es="Hecho con ❤ · IA y Computer Vision">Built with ❤ · AI & Computer Vision</span>
     </div>
   </footer>
-
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobileMenu">
-    <button class="mobile-menu-close" aria-label="Close menu"><i class="fas fa-times"></i></button>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
 
   <script src="assets/js/main.js"></script>
 </body>
