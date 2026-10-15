@@ -86,8 +86,10 @@ SELECTED PROJECTS
   training, auto-labeling, synthetic data, GPU management.
 - Logistics Management System - FastAPI + Next.js + PostgreSQL; RBAC,
   reports, invoices, AWS S3.
-- Door Defect Detection (YOLOv9) - 539 annotated images, 4 classes,
-  Roboflow augmentation.
+- YOLO-3D — Real-time 3D Object Detection — YOLOv11 + Depth
+  Anything v2 for pseudo-3D bounding boxes and bird's eye view.
+- Image Analyzer (BLIP) — Multimodal image analysis: description
+  generation, keyword extraction, term suggestions.
 - LicitAI - FastAPI + React + MongoDB + Google Gemini (LLM) + Stripe.
 - Protectora RRSS - Pet-adoption diffusion: FastAPI + React + Telegram
   bot + SMTP.

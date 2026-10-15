@@ -89,12 +89,22 @@
     },
     {
       icon: "ai",
-      title: { en: "Door Defect Detection · YOLOv9", es: "Detección de defectos en puertas · YOLOv9" },
+      title: { en: "YOLO-3D — Real-time 3D Object Detection", es: "YOLO-3D — Detección de objetos 3D en tiempo real" },
       desc: {
-        en: "Industrial defect detection on doors — 539 annotated images, 4 classes (dent/scratch major/minor), Roboflow preprocessing and augmentation, trained with a custom YOLOv9 pipeline.",
-        es: "Detección industrial de defectos en puertas — 539 imágenes anotadas, 4 clases (abolladura/rayón mayor/menor), preprocesado y aumentación con Roboflow, entrenada con un pipeline YOLOv9 personalizado."
+        en: "Real-time 3D object detection combining YOLOv11 with Depth Anything v2 for pseudo-3D bounding boxes and bird's eye view visualization. Supports video files and webcam input with adjustable model sizes.",
+        es: "Detección de objetos 3D en tiempo real que combina YOLOv11 con Depth Anything v2 para bounding boxes pseudo-3D y visualización cenital. Soporta archivos de video y webcam con modelos ajustables."
       },
-      tags: ["YOLOv9", "Roboflow", "OpenCV"],
+      tags: ["YOLOv11", "Depth Anything v2", "PyTorch", "OpenCV"],
+      links: []
+    },
+    {
+      icon: "ai",
+      title: { en: "Image Analyzer — Multimodal AI (BLIP)", es: "Image Analyzer — IA Multimodal (BLIP)" },
+      desc: {
+        en: "Python package for image analysis using BLIP (Bootstrapped Language-Image Pre-training). Generates image descriptions, extracts keywords, and suggests related terms. CPU and GPU support.",
+        es: "Paquete Python para análisis de imágenes usando BLIP. Genera descripciones de imágenes, extrae palabras clave y sugiere términos relacionados. Soporte CPU y GPU."
+      },
+      tags: ["BLIP", "Python", "Multimodal AI", "Hugging Face"],
       links: []
     },
     {
