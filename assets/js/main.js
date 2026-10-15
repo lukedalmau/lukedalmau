@@ -405,20 +405,18 @@
     const LINES = [
       "$ whoami",
       "luis-dalmau · Full-Stack AI Engineer (Computer Vision)",
-      "$ ls ~/projects",
-      "logistics-system   door-defect-yolov9   licit-ai   protectora-rrss",
-      "$ python train.py --model yolov9-c --epochs 100 --img 640",
-      "Epoch 100/100 · mAP@0.5 0.964 · loss 0.032",
-      "$ python deploy.py --platform sorba.ai",
-      "✓ model live · IIoT predictive maintenance",
-      "$ git log --oneline -3",
-      "9b68805 bbox detection sequence",
-      "22803f3 neural-net background",
-      "d0ac264 terminal + yolo box",
-      "$ docker ps --format '{{.Names}}'",
-      "vision-restlib   fastapi-api   nextjs-web   postgres",
-      "$ curl -s api.sorba.ai/health",
-      "status: ok · models: 12 · gpu: A100"
+      "$ git shortlog -sn | head -3",
+      "299 issues · 75 MRs · 22 projects · 3373+ hours",
+      "$ python train.py --arch yolov9-c --epochs 100",
+      "Epoch 100/100 · mAP@0.5 0.964 · loss 0.032 · GPU: A100",
+      "$ python optimize.py --format tensorrt",
+      "✓ 2.1ms inference · TFLite · INT8 ready",
+      "$ python detect.py --video industrial.mp4 --classes fire smoke ppe",
+      "✓ 47 detections · fire: 12 · smoke: 8 · PPE: 24",
+      "$ ls /models",
+      "yolov9  efficientdet  retinanet  mask-rcnn  rf-detr",
+      "$ docker build -t cv-deploy .",
+      "✓ deployed · 2000 commits · 22 projects · GPU: A100"
     ];
 
     if (reduce) { el.textContent = LINES.join("\n"); return; }

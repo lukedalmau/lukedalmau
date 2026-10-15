@@ -52,13 +52,18 @@ Anukys · Malaga, Spain (Hybrid)
 AI Engineer - Computer Vision
 SORBA.ai (Sorbotics LLC) · Jacksonville, USA (Remote)
 01/2024 - Present
-- Authored a proprietary computer-vision library (300+ commits): YOLOv9
-  training/inference, dataset management (YOLO/COCO/VOC), auto-labeling,
-  synthetic data, GPU/VRAM scheduling.
-- Built SGE vision nodes for real-time video: object detection, OCR
-  (EasyOCR), pose/depth estimation, ByteTrack tracking.
-- Resolved cross-environment CUDA/dependency issues and managed TLS for
-  remote nodes.
+- Built and optimized CV training pipelines covering 10+ architectures
+  (YOLOv5/v9, EfficientDet, MobileNet v2, RetinaNet, Faster R-CNN,
+  Mask R-CNN, CenterNet, SSD).
+- Resolved 299 issues and merged 75 MRs across 22 projects (~2,000
+  commits, 3,373+ hours).
+- Integrated synthetic data generation (Stable Diffusion, GAN, VAE),
+  auto-labeling (GroundingDINO, Florence-2), and model optimization
+  (TensorRT, TFLite).
+- Built real-time video processing for industrial detection: fire/smoke,
+  gas leaks, PPE, gauge OCR, license plates, and spatial tracking.
+- Packaged ML models for Debian/RHEL. Managed GPU resources for
+  concurrent training.
 
 Full-Stack Developer (Backend focus)
 Aerial Underground Construction Inc. · Kissimmee, FL, USA (Remote)
