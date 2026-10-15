@@ -56,7 +56,7 @@ SORBA.ai (Sorbotics LLC) · Jacksonville, USA (Remote)
 
 Full-Stack Developer (Backend focus)
 Aerial Underground Construction Inc. · Kissimmee, FL, USA (Remote)
-09/2024 - Present
+09/2024 - 10/2025
 - Built logistics platform backend (FastAPI + SQLAlchemy + Alembic +
   PostgreSQL, 430+ commits): JWT auth, RBAC (3 roles), 20+ REST
   endpoints.
