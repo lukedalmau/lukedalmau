@@ -56,7 +56,7 @@ Your personal portfolio website is hosted on GitHub Pages and features:
 ### Experience
 - **Sorbotics LLC** (01/2024–Present): R&D Intern, Jacksonville, USA
   - YOLOv9 object detection for IIoT predictive maintenance
-  - sorba_ml_vision_restlib 0.3.17 integration
+  - proprietary computer-vision library integration
   - FastAPI/Alembic backend, TLS certificate management
   - OpenVPN/Proton VPN for secure IIoT testbed access
 

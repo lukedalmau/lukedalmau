@@ -12,7 +12,7 @@ SUMMARY
 ==================================================================
 Full-Stack AI Engineer with 3+ years building production systems across
 computer vision, ML pipelines, and full-stack web applications. Author of
-sorba_ml_vision_restlib, a proprietary computer-vision library used to
+a proprietary computer-vision library used to
 train and deploy YOLOv9 object-detection models for industrial IIoT
 predictive maintenance. B.S. in Computer Science, hands-on MLOps, and a
 teaching background in AI, ML, and distributed systems. Bilingual
@@ -46,7 +46,7 @@ EXPERIENCE
 AI Engineer - Computer Vision
 SORBA.ai (Sorbotics LLC) · Jacksonville, USA (Remote)
 01/2024 - Present
-- Authored sorba_ml_vision_restlib (300+ commits, v0.3.x): YOLOv9
+- Authored a proprietary computer-vision library (300+ commits): YOLOv9
   training/inference, dataset management (YOLO/COCO/VOC), auto-labeling,
   synthetic data, GPU/VRAM scheduling.
 - Built SGE vision nodes for real-time video: object detection, OCR
@@ -76,7 +76,7 @@ University of Havana · Faculty of Mathematics & Computer Science
 ==================================================================
 SELECTED PROJECTS
 ==================================================================
-- sorba_ml_vision_restlib - Proprietary CV library (author): YOLOv9
+- Proprietary Computer-Vision Library - author: YOLOv9
   training, auto-labeling, synthetic data, GPU management.
 - Logistics Management System - FastAPI + Next.js + PostgreSQL; RBAC,
   reports, invoices, AWS S3.

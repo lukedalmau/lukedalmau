@@ -69,7 +69,7 @@
   const PROJECTS = [
     {
       icon: "ai",
-      title: { en: "sorba_ml_vision_restlib", es: "sorba_ml_vision_restlib" },
+      title: { en: "Computer Vision Library (proprietary)", es: "Librería de Visión por Computadora (propietaria)" },
       desc: {
         en: "Proprietary Python computer-vision library (author): YOLOv9 training & inference, dataset management (YOLO/COCO/VOC), auto-labeling with GroundingDINO & Florence-2, synthetic data with Stable Diffusion, and a GPU/VRAM scheduler.",
         es: "Librería propietaria de visión por computadora en Python (autor): entrenamiento e inferencia YOLOv9, gestión de datasets (YOLO/COCO/VOC), auto-etiquetado con GroundingDINO y Florence-2, datos sintéticos con Stable Diffusion y un planificador de GPU/VRAM."
