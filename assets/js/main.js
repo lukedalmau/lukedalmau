@@ -27,6 +27,14 @@
       btn.setAttribute("aria-pressed", String(btn.dataset.setlang === lang));
     });
     localStorage.setItem(I18N_KEY, lang);
+
+    const cvBtn = $("#cvBtn");
+    if (cvBtn) {
+      const es = lang === "es";
+      cvBtn.setAttribute("href", es ? "assets/cv/Luis_Dalmau_CV_ES.pdf" : "assets/cv/Luis_Dalmau_CV.pdf");
+      cvBtn.setAttribute("download", es ? "Luis_Dalmau_CV_ES.pdf" : "Luis_Dalmau_CV.pdf");
+    }
+
     renderProjects(lang);
   }
 
