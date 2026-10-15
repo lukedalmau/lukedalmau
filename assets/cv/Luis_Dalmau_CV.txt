@@ -43,6 +43,12 @@ ESLint, Prettier
 ==================================================================
 EXPERIENCE
 ==================================================================
+Technical Engineer
+Anukys · Malaga, Spain (Hybrid)
+10/2025 - Present
+- Consultancy serving clients and business partners in artificial
+  intelligence and computer vision.
+
 AI Engineer - Computer Vision
 SORBA.ai (Sorbotics LLC) · Jacksonville, USA (Remote)
 01/2024 - Present
