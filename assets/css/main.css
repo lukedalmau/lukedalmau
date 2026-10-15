@@ -317,6 +317,6 @@ main, footer { position: relative; z-index: 1; }
 .terminal__dot--y { background: #febc2e; }
 .terminal__dot--g { background: #28c840; }
 .terminal__title { margin-left: 8px; color: var(--text-dim); font-size: 0.72rem; }
-.terminal__body { padding: 12px 14px 12px 6px; min-height: 46px; text-align: left; color: #7ee787; font-size: 0.8rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; }
+.terminal__body { padding: 10px 14px 10px 2px; min-height: 46px; text-align: left; color: #7ee787; font-size: 0.8rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; }
 .terminal__cursor { display: inline-block; width: 8px; height: 15px; background: var(--accent); vertical-align: text-bottom; animation: blink 1s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
