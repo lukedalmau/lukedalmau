@@ -365,6 +365,56 @@
     })();
   }
 
+  /* ---------------- Detection box sequence ---------------- */
+  function initDetectionBox() {
+    const box = document.querySelector(".det-box");
+    if (!box) return;
+    const label = box.querySelector(".det-box__label");
+    const scan = box.querySelector(".det-box__scan");
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const SMALL = "calc(50% - 1px)";
+    const FULL = "18px 26px 52px 26px";
+    const TEXT = "person · 0.98";
+
+    function setSize(inset, radius, animate) {
+      box.style.transition = animate ? "" : "none";
+      box.style.inset = inset;
+      box.style.borderRadius = radius;
+      box.classList.toggle("is-full", inset === FULL);
+    }
+
+    function typeLabel() {
+      label.style.opacity = "1";
+      label.textContent = "";
+      let i = 0;
+      (function type() {
+        label.textContent = TEXT.slice(0, i);
+        i++;
+        if (i <= TEXT.length) setTimeout(type, 60);
+      })();
+    }
+
+    function run() {
+      if (reduce) {
+        setSize(FULL, "8px", true);
+        label.textContent = TEXT;
+        label.style.opacity = "1";
+        return;
+      }
+      setSize(SMALL, "2px", false);
+      label.textContent = "";
+      label.style.opacity = "0";
+      scan.classList.remove("is-scanning");
+
+      setTimeout(() => setSize(FULL, "8px", true), 900);
+      setTimeout(() => scan.classList.add("is-scanning"), 1800);
+      setTimeout(typeLabel, 2900);
+      setTimeout(run, 4600);
+    }
+
+    run();
+  }
+
   /* ---------------- Init ---------------- */
   document.addEventListener("DOMContentLoaded", () => {
     applyTheme(detectTheme());
@@ -375,5 +425,6 @@
     initScrollSpy();
     initNetBackground();
     initTerminal();
+    initDetectionBox();
   });
 })();
