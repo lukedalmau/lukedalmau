@@ -248,6 +248,89 @@
     sections.forEach((s) => observer.observe(s));
   }
 
+  /* ---------------- Neural network background ---------------- */
+  function initNetBackground() {
+    const canvas = document.getElementById("netBg");
+    if (!canvas) return;
+    const hero = canvas.closest(".hero");
+    const ctx = canvas.getContext("2d");
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let nodes = [];
+    let raf = 0;
+
+    function resize() {
+      canvas.width = hero.clientWidth;
+      canvas.height = hero.clientHeight;
+      const count = Math.max(30, Math.min(80, Math.floor((canvas.width * canvas.height) / 16000)));
+      nodes = Array.from({ length: count }, () => ({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        vx: (Math.random() - 0.5) * 0.35,
+        vy: (Math.random() - 0.5) * 0.35,
+        r: Math.random() * 1.5 + 0.6
+      }));
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      const linkDist = 130;
+      for (let i = 0; i < nodes.length; i++) {
+        const a = nodes[i];
+        a.x += a.vx; a.y += a.vy;
+        if (a.x < 0 || a.x > canvas.width) a.vx *= -1;
+        if (a.y < 0 || a.y > canvas.height) a.vy *= -1;
+        for (let j = i + 1; j < nodes.length; j++) {
+          const b = nodes[j];
+          const dx = a.x - b.x, dy = a.y - b.y;
+          const d = Math.hypot(dx, dy);
+          if (d < linkDist) {
+            ctx.strokeStyle = "rgba(34,211,238," + (0.13 * (1 - d / linkDist)).toFixed(3) + ")";
+            ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+          }
+        }
+      }
+      for (const n of nodes) {
+        ctx.fillStyle = "rgba(129,140,248,0.75)";
+        ctx.beginPath(); ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2); ctx.fill();
+      }
+    }
+
+    function loop() { draw(); raf = requestAnimationFrame(loop); }
+
+    resize();
+    window.addEventListener("resize", resize);
+    if (reduce) { draw(); } else { raf = requestAnimationFrame(loop); }
+  }
+
+  /* ---------------- Terminal typing effect ---------------- */
+  function initTerminal() {
+    const el = document.getElementById("termText");
+    if (!el) return;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const lines = [
+      "$ python train.py --model yolov9-c --epochs 100",
+      "✓ mAP@0.5 0.964 · 539 imgs · 4 classes",
+      "$ deploy --platform sorba.ai",
+      "✓ model live · IIoT predictive maintenance"
+    ];
+    if (reduce) { el.textContent = lines.join("\n"); return; }
+    let li = 0, ci = 0, deleting = false;
+    (function tick() {
+      const line = lines[li];
+      if (!deleting) {
+        ci++;
+        el.textContent = line.slice(0, ci);
+        if (ci >= line.length) { deleting = true; setTimeout(tick, 1500); return; }
+        setTimeout(tick, 26);
+      } else {
+        ci--;
+        el.textContent = line.slice(0, ci);
+        if (ci <= 0) { deleting = false; li = (li + 1) % lines.length; }
+        setTimeout(tick, 11);
+      }
+    })();
+  }
+
   /* ---------------- Init ---------------- */
   document.addEventListener("DOMContentLoaded", () => {
     applyTheme(detectTheme());
@@ -256,5 +339,7 @@
     initCounters();
     initMenu();
     initScrollSpy();
+    initNetBackground();
+    initTerminal();
   });
 })();

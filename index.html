@@ -53,6 +53,7 @@
     <!-- ===================== HERO ===================== -->
     <section class="hero">
       <div class="hero__glow" aria-hidden="true"></div>
+      <canvas class="hero__net" id="netBg" aria-hidden="true"></canvas>
       <div class="container hero__inner">
         <div class="hero__content">
           <p class="hero__eyebrow reveal">
@@ -95,11 +96,20 @@
           <div class="monogram">
             <img src="assets/img/avatar.jpeg" alt="Luis Enrique Dalmau Coopat" width="168" height="168" class="monogram__img">
             <div class="monogram__ring" aria-hidden="true"></div>
+            <div class="det-box" aria-hidden="true">
+              <span class="det-box__label">person · 0.98</span>
+            </div>
           </div>
-          <div class="hero__panel-row">
-            <span class="kv"><span class="kv__k" data-en="focus" data-es="enfoque">focus</span><span class="kv__v">Computer Vision</span></span>
-            <span class="kv"><span class="kv__k" data-en="base" data-es="base">base</span><span class="kv__v">Málaga, ES</span></span>
-            <span class="kv"><span class="kv__k">yrs</span><span class="kv__v">3+</span></span>
+          <div class="terminal" aria-hidden="true">
+            <div class="terminal__bar">
+              <span class="terminal__dot terminal__dot--r"></span>
+              <span class="terminal__dot terminal__dot--y"></span>
+              <span class="terminal__dot terminal__dot--g"></span>
+              <span class="terminal__title">luis@vision ~/yolov9</span>
+            </div>
+            <div class="terminal__body">
+              <span id="termText"></span><span class="terminal__cursor"></span>
+            </div>
           </div>
         </div>
       </div>
