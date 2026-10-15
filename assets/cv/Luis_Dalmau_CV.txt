@@ -1,0 +1,207 @@
+Luis Enrique
+Dalmau Coopat
+Softw
+are
+lukedalmau@gmail.com
+
+Perfil profesional
+Desarrollador full-stack con especialización en inteligencia artificial y computer vision, con tres años de experiencia en desarrollo backend y colaboración en equipos de tecnología. Expertos en Python, FastAPI y Alembic para servicios backend, con experiencia integrando modelos de detección de objetos (YOLOv9) y soluciones de visión por computadora en plataformas IIoT. Capacidad comprobada para colaborar en equipos multidisciplinarios, facilitando la integración de algoritmos de IA y optimización de rendimiento de aplicaciones. Entusiasta de tecnologías emergentes y dedicado a fomentar un entorno de aprendizaje colaborativo a través de la enseñanza y mentoría. Experiencia comprobada en Sorbotics LLC investigando y desplegando modelos de visión artificial para mantenimiento predictivo y optimización de procesos industriales.
+crecimiento y la comprension a través de la ensenanza y mentoria.
+
+Asistente de Profesor en Redes de Computadoras,
+Aprendizaje Automatico, Inteligencia Artificial
+Sistemas Operativos y Sistemas Distribuidos. en
+
+Facultad de Matematica y Computacion, UH,
+01/2023—-09/2024
+Logros/Tareas
+,
+
+oo,
+
+oo,
+
+e Apoyaral profesor principal en la organizacion y realizacion de las
+clases practicas, ademasde calificar los examenes.
+
+e Ayudar a los estudiantes a comprender los conceptos impartidos en
+
+las conferencias.
+e Colaborar en investigaciones y proyectosprivados con otras
+instituciones.
+
+Python (Lenguaje de
+Programacion)
+C# (Lenguaje de Programacion)
+Metodologia Scrum
+Git
+Django (Framework Web)
+Inteligencia Artificial
+Ciencia de Datos
+Aprendizaje de Maquina
+OpenCV
+Procesamiento de Imagenes
+Docker
+
+Procesamiento de Lenguaje
+Natural
+
+FastAPI
+
+Alembic
+iaotaaaon
+railwind
+TypeScript
+-Computer Vision
+-YOLOv9
+
+Practicante en Investigacion y Desarrollo (I+D) en
+Sorbotics LLC, Jacksonville, USA
+
+Deteccion de Objetos\n\nTecnologias Open Source\n\nIntegridad de Datos\n\nSistemas Operacionales\n\nQ01/2024—Presente\n\nRedes de Computadoras\n\nSorbotics LLC: Innovador en IIoT y IA, ofreciendo la plataforma SORBA.ai\n\nDesarrollo de modelos YOLOv9 para deteccion de objetos en entornos IIoT\n-Integracion con sorba_ml_vision_restlib 0.3.17\n-Resolucion de dependencias de entorno (symlinks, paths de pesos)\n-Arquitectura de pipeline de entrenamiento e inferencia\n-Gestion de certificados TLS para conexiones de nodos remotos\n-Experimento con tres pathways de solucion para problemas de modelo\n\nGestion de Eventos\nHabilidades de Coordinacion\n\npara mantenimiento predictivo y optimizacion de procesos en diversas\n\nindustrias.\nLogros/Tareas:\ne Investigacion de Soluciones de Vanguardia: Realicé investigaciones\n\nexhaustivas sobre modelos de deteccidn de objetos de cédigo\nabierto y con licencia comercial, asi como solucionesde vision por\ncomputadoraaplicables para su integracion en la plataforma de la\nempresa.
+
+Interfaces de Programaci6on de
+
+Aplicaciones (APIs)
+Backend
+Basesde Datos
+
+Desarrollo de Software Front End
+
+Gestion de Errores de Software
+
+Administracion de Bases de Datos
+Simulacion
+Conociemiento Avanzado en
+Matematicas
+SistemasDistribuidos
+
+¢ Evaluacion del Rendimiento de Modelos: Evalué diversos modelos
+en cuanto a su efectividad en deteccion y segmentacion de objetos,
+contribuyendo a la toma de decisiones informadaspara su posible
+
+implementacion.
+¢ Gestidn de Conjuntos de Datos: Desarrollé métodosy clases para el
+manejo eficiente de conjuntos de datos, garantizando la integridad de
+los datos y su idoneidad para el entrenamiento de modelos.
+e Colaboracion con el Equipo de I+D: Colaboré con el equipo de
+I+D para alinear los hallazgos de investigacidn con los objetivos del
+proyecto,facilitando la integracion de los modelos seleccionados en
+los proyectos en curso.
+
+Desarrollador Freelance Full-Stack con Enfoque
+en Backend en Aerial Underground Construction
+Inc., Kissimmee, FL, USA
+
+09/2024—Presente
+Logros/Tareas
+
+e Desarrollo de Funcionalidades Backend: Implementé con éxito el
+backend de la aplicacién utilizando Python, FastAPI y Alembic,
+mejorando el rendimientoy la escalabilidad.
+e Gestion de Basesde Datos: Administré eficazmente las migraciones
+de la base de datos con Alembic, garantizando transiciones fluidas
+
+durante los cambios en el esquema.
+¢ Soporte al Frontend: Contribui al desarrollo del frontend,
+completando aproximadamente el 35% de las tareas, incluidas
+mejoras en la interfaz de usuario, algunos componentesclave,
+creacion de paginas principales y correccidn de errores.
+e Colaboracion: Trabajé en estrecha colaboracion con el equipo
+e Colaboracion: Trabajé en estrecha colaboracion con el equipo
+de frontend para integrar las API del backend, mejorando la
+funcionalidad general de la aplicacion.
+¢ Experiencia en IA y Computer Vision: Integracion de modelos de
+deteccion de objetos YOLOv9 y otros algoritmos de vision por
+computadora para optimizacion de procesos industriales.
+
+Extraccion de Informacion
+Conocimiento Avanzado en
+Estadisticas
+Conocimiento Avanzado en
+Probabilidades
+
+Idiomas
+TASES oooooccccccccsssssssssssssssssssssssssssssssssssnssnnnessesee B2
+ESparnol ooo... cece ccccccec cece tee teseeteeteeeeens Nativo/a
+
+Intereses
+Ciencia de Datos
+Inteligencia Artificial
+Vision por Computador
+Procesamiento de Imagenes
+Aprendizaje de Maquina
+Trading Algoritmico
+Procesamiento de Lenguaje Natural
+
+Otras
+Competencias
+Pragmatico
+Trabajo en Equipo
+Solucionador de Problemas
+
+Formacion
+
+Buscador de Errores
+
+Licenciado en Ciencia de la Computacion,
+Universidad de La Habana, La Habana
+
+Referencias
+
+09/2017-12/2022
+
+MsC. Wilfredo Morales Lezca deUniversidad de La Habana
+
+e Tesis: Generacion grafica de senas de la Lengua de Senas Cubana: un
+primer enfoque
+e Curso: Sistemas de Extraccion de Informacion
+e Curso: Modelos Graficos Probabilisticos
+e Curso: Procesamiento de Imagenes
+e Curso: Algoritmos de Similitud
+e Curso: Problemas de Enrutamiento de Vehiculos
+
+t.me/wilfre80
+Yandy Perez-Ramos de Sorbotics LLC
+yandy@sorbasoft.com
+Miguel Angel Gonzalez Calles de Freelancer
+
+migueacalle98@gmail.com
+
+Cursos
+CS5O0AI: CS50’s Introduction to Artificial
+Intelligence with Python en Curso en
+linea edX del Instituto HarvardX (mas
+informacion en mi perfil de LinkedIn)
+10/2021—12/2021
+Sololearn Data Science en Curso de
+
+Sololearn impartido por aplicacién movil
+
+Proyectos Personales
+Generacion grafica de sefnas de la Lengua de
+Senas Cubana: un primer enfoque, La Habana
+03/2022-12/2022
+e Tesis de Diploma
+
+« Completamente en Python
+
+Preprocesamiento de Imagenes Dermatoscopicas,
+La Habana
+03/2020—07/2021
+e Uso de OpenCVen Python
+e Trabajo con Imagenes Médicas
+
+Predicciones de Natacion Olimpica, La Habana
+06/2021—07/2021
+e Herramienta para la prediccidn de natacidon olimpica basada en
+simulaciones sobre los datos proporcionados
+e Publicado junto a otros trabajos sobre los Juegos Olimpicos de Tokio
+en el sitio www.postdata.club
+
+09/2022—12/2022
+Sololearn Machine Learning en Curso de
+Sololearn impartido por aplicacion movil
+02/2022—06/2022
+
+
