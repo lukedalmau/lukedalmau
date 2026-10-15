@@ -287,7 +287,8 @@ main, footer { position: relative; z-index: 1; }
 .det-box {
   position: absolute; inset: calc(50% - 1px); z-index: 2;
   border: 2px solid var(--accent); border-radius: 2px; pointer-events: none;
-  transition: inset 0.7s cubic-bezier(0.22, 1, 0.36, 1), border-radius 0.7s;
+  opacity: 0;
+  transition: inset 0.7s cubic-bezier(0.22, 1, 0.36, 1), border-radius 0.7s, opacity 0.4s ease;
 }
 .det-box::before, .det-box::after { content: ""; position: absolute; width: 14px; height: 14px; border: 3px solid var(--accent); opacity: 0; transition: opacity 0.4s ease; }
 .det-box::before { top: -3px; left: -3px; border-right: none; border-bottom: none; border-radius: 6px 0 0 0; }

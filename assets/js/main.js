@@ -380,6 +380,7 @@
       box.style.transition = animate ? "" : "none";
       box.style.inset = inset;
       box.style.borderRadius = radius;
+      box.style.opacity = inset === FULL ? "1" : "0";
       box.classList.toggle("is-full", inset === FULL);
     }
 
