@@ -146,6 +146,56 @@
       },
       tags: ["Python", "Pandas", "Data Science"],
       links: [{ label: "postdata.club", href: "https://www.postdata.club" }]
+    },
+    {
+      icon: "ai",
+      title: { en: "Thermal Leak Detection", es: "Detección de fugas térmicas" },
+      desc: {
+        en: "Industrial gas leak detection using thermal imaging and computer vision. Real-time analysis of thermal video feeds for identifying gas leaks in industrial settings.",
+        es: "Detección industrial de fugas de gas usando imagen térmica y visión por computadora. Análisis en tiempo real de feeds de video térmico para identificar fugas en entornos industriales."
+      },
+      tags: ["OpenCV", "Python", "Thermal Imaging", "Industrial"],
+      links: []
+    },
+    {
+      icon: "ai",
+      title: { en: "Real-time Segmentation", es: "Segmentación en tiempo real" },
+      desc: {
+        en: "Real-time semantic segmentation with DeepLabV3, FCN ResNet50, MobileSAM, and SegNet. Comparing architectures for speed vs. accuracy tradeoffs in live video processing.",
+        es: "Segmentación semántica en tiempo real con DeepLabV3, FCN ResNet50, MobileSAM y SegNet. Comparación de arquitecturas para equilibrar velocidad y precisión en procesamiento de video en vivo."
+      },
+      tags: ["DeepLabV3", "MobileSAM", "SegNet", "PyTorch"],
+      links: []
+    },
+    {
+      icon: "ai",
+      title: { en: "Pose Estimation", es: "Estimación de pose" },
+      desc: {
+        en: "Real-time human pose estimation with HRNet, MMPose, MoveNet, and RTMO. Evaluating state-of-the-art pose models for accuracy and inference speed.",
+        es: "Estimación de pose humana en tiempo real con HRNet, MMPose, MoveNet y RTMO. Evaluación de modelos de pose de vanguardia para precisión y velocidad de inferencia."
+      },
+      tags: ["HRNet", "MMPose", "MoveNet", "RTMO"],
+      links: []
+    },
+    {
+      icon: "ai",
+      title: { en: "Car Plate Detection (ANPR)", es: "Detección de matrículas (ANPR)" },
+      desc: {
+        en: "Automatic Number Plate Recognition system for vehicle identification. Haar cascade + custom detection pipeline for reading license plates in video.",
+        es: "Sistema de reconocimiento automático de matrículas para identificación de vehículos. Pipeline con Haar cascade + detección personalizada para lectura de matrículas en video."
+      },
+      tags: ["OpenCV", "Haar Cascade", "ANPR", "Python"],
+      links: []
+    },
+    {
+      icon: "ai",
+      title: { en: "ML Trainer Engine — CV Training System", es: "ML Trainer Engine — Sistema de entrenamiento CV" },
+      desc: {
+        en: "Complete computer-vision training system supporting SOTA models (RF-DETR, EfficientDet, MobileNet, DeepLabV3). GPU resource management, data augmentation, multi-format datasets, and offline model management.",
+        es: "Sistema completo de entrenamiento de visión por computadora con modelos SOTA (RF-DETR, EfficientDet, MobileNet, DeepLabV3). Gestión de GPU, aumento de datos, datasets multi-formato y gestión de modelos offline."
+      },
+      tags: ["RF-DETR", "EfficientDet", "PyTorch", "Albumentations", "GPU"],
+      links: []
     }
   ];
 
