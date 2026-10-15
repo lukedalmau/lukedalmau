@@ -49,9 +49,9 @@ Your personal portfolio website is hosted on GitHub Pages and features:
 ### CV Highlights
 - **Name**: Luis Enrique Dalmau Coopat
 - **Title**: Full-Stack Developer / AI & Computer Vision Specialist
-- **Location**: Havana, Cuba / Remote
+- **Location**: Malaga, Spain / Remote
 - **Email**: lukedalmau@gmail.com
-- **Phone**: +53 5 396 2022
+- **Phone**: +34 613826894
 
 ### Experience
 - **Sorbotics LLC** (01/2024–Present): R&D Intern, Jacksonville, USA
