@@ -373,7 +373,7 @@
     const scan = box.querySelector(".det-box__scan");
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const SMALL = "calc(50% - 1px)";
-    const FULL = "18px 26px 52px 26px";
+    const FULL = "18px 26px 40px 26px";
     const TEXT = "person · 0.98";
 
     function setSize(inset, radius, animate) {
@@ -408,8 +408,8 @@
 
       setTimeout(() => setSize(FULL, "8px", true), 900);
       setTimeout(() => scan.classList.add("is-scanning"), 1800);
-      setTimeout(typeLabel, 2900);
-      setTimeout(run, 4600);
+      setTimeout(typeLabel, 4100);
+      setTimeout(run, 5600);
     }
 
     run();
