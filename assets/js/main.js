@@ -338,31 +338,53 @@
 
   /* ---------------- Terminal typing effect ---------------- */
   function initTerminal() {
+    const body = document.querySelector(".terminal__body");
     const el = document.getElementById("termText");
-    if (!el) return;
+    if (!el || !body) return;
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const lines = [
-      "$ python train.py --model yolov9-c --epochs 100",
-      "✓ mAP@0.5 0.964 · 539 imgs · 4 classes",
-      "$ deploy --platform sorba.ai",
-      "✓ model live · IIoT predictive maintenance"
+    const LINES = [
+      "$ whoami",
+      "luis-dalmau · Full-Stack AI Engineer (Computer Vision)",
+      "$ ls ~/projects",
+      "logistics-system   door-defect-yolov9   licit-ai   protectora-rrss",
+      "$ python train.py --model yolov9-c --epochs 100 --img 640",
+      "Epoch 100/100 · mAP@0.5 0.964 · loss 0.032",
+      "$ python deploy.py --platform sorba.ai",
+      "✓ model live · IIoT predictive maintenance",
+      "$ git log --oneline -3",
+      "9b68805 bbox detection sequence",
+      "22803f3 neural-net background",
+      "d0ac264 terminal + yolo box",
+      "$ docker ps --format '{{.Names}}'",
+      "vision-restlib   fastapi-api   nextjs-web   postgres",
+      "$ curl -s api.sorba.ai/health",
+      "status: ok · models: 12 · gpu: A100"
     ];
-    if (reduce) { el.textContent = lines.join("\n"); return; }
-    let li = 0, ci = 0, deleting = false;
-    (function tick() {
-      const line = lines[li];
-      if (!deleting) {
-        ci++;
-        el.textContent = line.slice(0, ci);
-        if (ci >= line.length) { deleting = true; setTimeout(tick, 1500); return; }
-        setTimeout(tick, 26);
+
+    if (reduce) { el.textContent = LINES.join("\n"); return; }
+
+    let li = 0, ci = 0, output = "";
+
+    function type() {
+      const line = LINES[li];
+      ci++;
+      el.textContent = output + line.slice(0, ci);
+      body.scrollTop = body.scrollHeight;
+      if (ci < line.length) {
+        setTimeout(type, 16);
       } else {
-        ci--;
-        el.textContent = line.slice(0, ci);
-        if (ci <= 0) { deleting = false; li = (li + 1) % lines.length; }
-        setTimeout(tick, 11);
+        output += line + "\n";
+        li++;
+        ci = 0;
+        if (li < LINES.length) {
+          setTimeout(type, 200);
+        } else {
+          setTimeout(() => { output = ""; li = 0; ci = 0; el.textContent = ""; type(); }, 4000);
+        }
       }
-    })();
+    }
+
+    type();
   }
 
   /* ---------------- Detection box sequence ---------------- */
