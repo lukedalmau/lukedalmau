@@ -252,43 +252,74 @@
   function initNetBackground() {
     const canvas = document.getElementById("netBg");
     if (!canvas) return;
-    const hero = canvas.closest(".hero");
     const ctx = canvas.getContext("2d");
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     let nodes = [];
     let raf = 0;
+    const mouse = { x: -9999, y: -9999 };
 
     function resize() {
-      canvas.width = hero.clientWidth;
-      canvas.height = hero.clientHeight;
-      const count = Math.max(30, Math.min(80, Math.floor((canvas.width * canvas.height) / 16000)));
-      nodes = Array.from({ length: count }, () => ({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        vx: (Math.random() - 0.5) * 0.35,
-        vy: (Math.random() - 0.5) * 0.35,
-        r: Math.random() * 1.5 + 0.6
-      }));
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      const count = Math.max(50, Math.min(130, Math.floor((canvas.width * canvas.height) / 12000)));
+      const prev = nodes.length;
+      nodes = Array.from({ length: count }, (_, i) => {
+        if (i < prev) return nodes[i];
+        return {
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          vx: (Math.random() - 0.5) * 0.4,
+          vy: (Math.random() - 0.5) * 0.4,
+          r: Math.random() * 1.5 + 0.6
+        };
+      });
     }
 
     function draw() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       const linkDist = 130;
+      const cursorDist = 220;
+
+      for (const n of nodes) {
+        const dx = mouse.x - n.x;
+        const dy = mouse.y - n.y;
+        const d = Math.hypot(dx, dy);
+        if (d < cursorDist && d > 0.001) {
+          const f = (1 - d / cursorDist) * 0.08;
+          n.vx += (dx / d) * f;
+          n.vy += (dy / d) * f;
+        }
+        n.vx += (Math.random() - 0.5) * 0.04;
+        n.vy += (Math.random() - 0.5) * 0.04;
+        n.vx *= 0.94;
+        n.vy *= 0.94;
+        n.x += n.vx;
+        n.y += n.vy;
+        if (n.x < 0 || n.x > canvas.width) n.vx *= -1;
+        if (n.y < 0 || n.y > canvas.height) n.vy *= -1;
+      }
+
       for (let i = 0; i < nodes.length; i++) {
         const a = nodes[i];
-        a.x += a.vx; a.y += a.vy;
-        if (a.x < 0 || a.x > canvas.width) a.vx *= -1;
-        if (a.y < 0 || a.y > canvas.height) a.vy *= -1;
         for (let j = i + 1; j < nodes.length; j++) {
           const b = nodes[j];
           const dx = a.x - b.x, dy = a.y - b.y;
           const d = Math.hypot(dx, dy);
           if (d < linkDist) {
             ctx.strokeStyle = "rgba(34,211,238," + (0.13 * (1 - d / linkDist)).toFixed(3) + ")";
+            ctx.lineWidth = 1;
             ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
           }
         }
+        const mdx = mouse.x - a.x, mdy = mouse.y - a.y;
+        const md = Math.hypot(mdx, mdy);
+        if (md < cursorDist) {
+          ctx.strokeStyle = "rgba(129,140,248," + (0.4 * (1 - md / cursorDist)).toFixed(3) + ")";
+          ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.moveTo(mouse.x, mouse.y); ctx.lineTo(a.x, a.y); ctx.stroke();
+        }
       }
+
       for (const n of nodes) {
         ctx.fillStyle = "rgba(129,140,248,0.75)";
         ctx.beginPath(); ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2); ctx.fill();
@@ -299,6 +330,9 @@
 
     resize();
     window.addEventListener("resize", resize);
+    window.addEventListener("mousemove", (e) => { mouse.x = e.clientX; mouse.y = e.clientY; });
+    window.addEventListener("mouseout", () => { mouse.x = -9999; mouse.y = -9999; });
+    window.addEventListener("touchmove", (e) => { if (e.touches[0]) { mouse.x = e.touches[0].clientX; mouse.y = e.touches[0].clientY; } }, { passive: true });
     if (reduce) { draw(); } else { raf = requestAnimationFrame(loop); }
   }
 
