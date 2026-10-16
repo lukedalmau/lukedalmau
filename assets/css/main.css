@@ -144,13 +144,11 @@ strong { color: var(--text); }
 .seg__btn[aria-pressed="true"] { background: var(--accent); color: #04121a; }
 
 /* ---------- Hero ---------- */
-.hero { position: relative; padding: 150px 0 90px; overflow: hidden; overflow: clip; }
-.hero__glow {
-  position: absolute; inset: -20% -10% auto; height: 560px; z-index: -1;
+.hero {
+  position: relative; padding: 150px 0 90px;
   background:
-    radial-gradient(40% 60% at 20% 20%, rgba(34, 211, 238, 0.18), transparent 70%),
-    radial-gradient(40% 60% at 80% 20%, rgba(129, 140, 248, 0.20), transparent 70%);
-  filter: blur(10px);
+    radial-gradient(42% 55% at 18% 10%, rgba(34, 211, 238, 0.14), transparent 70%),
+    radial-gradient(42% 55% at 82% 8%, rgba(129, 140, 248, 0.16), transparent 70%);
 }
 .hero__inner { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 48px; align-items: center; }
 
