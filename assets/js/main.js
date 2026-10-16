@@ -453,7 +453,7 @@
     const scan = box.querySelector(".det-box__scan");
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const SMALL = "calc(50% - 1px)";
-    const FULL = "26px 26px 32px 26px";
+    const FULL = "15% 15% 18% 15%";
     const TEXT = "person · 0.98";
 
     function setSize(inset, radius, animate) {
