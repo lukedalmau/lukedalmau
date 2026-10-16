@@ -289,7 +289,7 @@ strong { color: var(--text); }
 
 /* Small phones */
 @media (max-width: 560px) {
-  .container { padding: 0 16px; }
+  .container { padding: 0 8px; }
   .hero { padding-top: 104px; }
   .about__stats { grid-template-columns: 1fr 1fr; }
   .hero__title { font-size: 2rem; }
@@ -314,7 +314,7 @@ strong { color: var(--text); }
 
 /* Small phones */
 @media (max-width: 400px) {
-  .container { padding: 0 4px; }
+  .container { padding: 0 2px; }
   .hero__title { font-size: 1.7rem; }
   .nav__inner { height: 56px; gap: 4px; }
   .nav__actions { gap: 3px; }
