@@ -243,7 +243,7 @@ strong { color: var(--text); }
 .contact__card:hover { border-color: var(--accent); }
 .contact__icon { width: 44px; height: 44px; flex-shrink: 0; border-radius: 12px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); }
 .contact__label { display: block; color: var(--text-dim); font-size: 0.78rem; }
-.contact__value { color: var(--text); font-size: 0.92rem; font-weight: 500; }
+.contact__value { color: var(--text); font-size: 0.92rem; font-weight: 500; word-break: break-word; }
 
 /* ---------- Footer ---------- */
 .footer { border-top: 1px solid var(--border); padding: 28px 0; }
@@ -304,18 +304,22 @@ strong { color: var(--text); }
   .stat__num { font-size: 1.7rem; }
 }
 
-/* Very small phones (320px) */
-@media (max-width: 360px) {
+/* Small phones */
+@media (max-width: 400px) {
+  .container { padding: 0 12px; }
   .hero__title { font-size: 1.7rem; }
-  .nav__inner { height: 56px; }
-  .nav__logo-mark { width: 30px; height: 30px; }
-  .icon-btn { width: 30px; height: 30px; }
-  .seg__btn { padding: 4px 6px; font-size: 0.66rem; }
+  .nav__inner { height: 56px; gap: 5px; }
   .nav__actions { gap: 4px; }
+  .nav__logo-mark { width: 28px; height: 28px; font-size: 0.68rem; }
+  .icon-btn { width: 28px; height: 28px; }
+  .nav__cv { width: 28px; }
+  .seg { padding: 2px; gap: 1px; }
+  .seg__btn { padding: 3px 5px; font-size: 0.62rem; }
   .chip { padding: 6px 10px; font-size: 0.78rem; }
   .btn { padding: 10px 16px; font-size: 0.88rem; }
   .monogram { width: 120px; height: 120px; }
   .terminal__body { height: 120px; }
+  .contact__value { font-size: 0.82rem; }
 }
 
 /* Short landscape screens */
@@ -374,7 +378,7 @@ main, footer { position: relative; z-index: 1; }
 .terminal__dot--r { background: #ff5f57; }
 .terminal__dot--y { background: #febc2e; }
 .terminal__dot--g { background: #28c840; }
-.terminal__title { margin-left: 8px; color: var(--text-dim); font-size: 0.72rem; }
+.terminal__title { margin-left: 8px; color: var(--text-dim); font-size: 0.72rem; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .terminal__body { padding: 10px 14px 10px 2px; height: 168px; overflow-y: auto; text-align: left; color: #7ee787; font-size: 0.8rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; }
 .terminal__body::-webkit-scrollbar { width: 6px; }
 .terminal__body::-webkit-scrollbar-thumb { background: rgba(34, 211, 238, 0.25); border-radius: 3px; }
