@@ -264,12 +264,23 @@ strong { color: var(--text); }
   .nav__burger { display: grid; }
   .nav__cv span { display: none; }
   .nav__cv { width: 38px; justify-content: center; padding: 0; }
+  .nav__logo-text { display: none; }
+  .nav__inner { gap: 8px; }
+  .nav__actions { gap: 6px; }
 }
 
 @media (max-width: 560px) {
   .about__stats { grid-template-columns: 1fr 1fr; }
-  .seg { display: none; }
   .hero__title { font-size: 2.3rem; }
+  .seg__btn { padding: 5px 8px; font-size: 0.75rem; }
+  .seg { padding: 2px; gap: 1px; }
+  .icon-btn { width: 34px; height: 34px; }
+  .projects { grid-template-columns: 1fr; }
+  .skills { grid-template-columns: 1fr; }
+  .contact__cards { grid-template-columns: 1fr; }
+  .hero__panel { padding: 20px; }
+  .monogram { width: 140px; height: 140px; margin-bottom: 20px; }
+  .terminal__body { height: 140px; }
 }
 
 /* ---------- Reduced motion ---------- */
