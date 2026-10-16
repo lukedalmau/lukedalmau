@@ -54,7 +54,7 @@ html { scroll-behavior: smooth; }
 }
 
 /* ---------- Base ---------- */
-html, body { overflow-x: hidden; overflow-x: clip; }
+body { overflow-x: hidden; overflow-x: clip; }
 
 body {
   font-family: var(--font-sans);
@@ -311,7 +311,7 @@ strong { color: var(--text); }
 
 /* Small phones */
 @media (max-width: 400px) {
-  .container { padding: 0 8px; }
+  .container { padding: 0 4px; }
   .hero__title { font-size: 1.7rem; }
   .nav__inner { height: 56px; gap: 4px; }
   .nav__actions { gap: 3px; }
@@ -325,6 +325,8 @@ strong { color: var(--text); }
   .monogram { width: 120px; height: 120px; }
   .terminal__body { height: 120px; }
   .contact__value { font-size: 0.82rem; }
+  .det-box__label { font-size: 0.52rem; padding: 1px 5px; }
+  .nav__cv svg { width: 24px; height: 24px; }
 }
 
 /* Short landscape screens */
