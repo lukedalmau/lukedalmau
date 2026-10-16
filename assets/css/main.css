@@ -266,6 +266,8 @@ strong { color: var(--text); }
 @media (max-width: 1024px) {
   .container { padding: 0 20px; }
   .hero__inner { gap: 32px; }
+  .contact { max-width: none; }
+  .timeline { max-width: none; }
 }
 
 /* Tablets & large phones: single-column */
@@ -276,6 +278,7 @@ strong { color: var(--text); }
   .about { grid-template-columns: 1fr; }
   .section { padding: 64px 0; }
   .hero__content { text-align: center; }
+  .hero__desc { margin-left: auto; margin-right: auto; }
   .hero__eyebrow { justify-content: center; }
   .hero__actions { justify-content: center; }
   .hero__socials { justify-content: center; }
