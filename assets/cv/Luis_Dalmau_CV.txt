@@ -77,10 +77,10 @@ Aerial Underground Construction Inc. · Kissimmee, FL, USA (Remote)
 - Contributed ~35% of a Next.js 14 + React + TypeScript frontend
   (310+ commits) with automated tests and Docker/Heroku deployment.
 
-Teaching Assistant
+Assistant Professor
 University of Havana · Faculty of Mathematics & Computer Science
-01/2023 - 09/2024
-- Assisted Computer Networks, Machine Learning, AI, Operating Systems,
+01/2023 - 01/2025
+- Taught Computer Networks, Machine Learning, AI, Operating Systems,
   and Distributed Systems; led practicals, graded exams, mentored
   students.
 
