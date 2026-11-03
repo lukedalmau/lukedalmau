@@ -6,6 +6,7 @@ Phone: +34 613 826 894
 Email: lukedalmau@gmail.com
 GitHub: https://github.com/lukedalmau
 LinkedIn: https://linkedin.com/in/luis-enrique-dalmau-coopat-programmer
+Portfolio: https://lukedalmau.github.io/lukedalmau
 
 ==================================================================
 PROFESSIONAL SUMMARY
@@ -15,14 +16,15 @@ computer vision, ML pipelines, and full-stack web applications. Author of
 a proprietary computer-vision library used to
 train and deploy YOLOv9 object-detection models for industrial IIoT
 predictive maintenance. B.S. in Computer Science, hands-on MLOps, and a
-teaching background in AI, ML, and distributed systems. Bilingual
-Spanish/English.
+teaching background in AI, ML, and distributed systems. Spanish
+native, English B2 (professional working proficiency).
 
 ==================================================================
 SKILLS
 ==================================================================
-AI & Computer Vision: YOLOv9, PyTorch, OpenCV, Object Detection, Image
-Segmentation, Auto-labeling (GroundingDINO, SAM, Florence-2), Synthetic
+AI & Computer Vision: Python, PyTorch, TensorFlow, OpenCV, Deep Learning,
+MLOps, Object Detection, Image Segmentation, Auto-labeling
+(GroundingDINO, SAM, Florence-2), Synthetic
 Data (Stable Diffusion), Albumentations, TensorBoard, scikit-learn,
 pandas, NumPy
 
@@ -43,14 +45,9 @@ ESLint, Prettier
 ==================================================================
 EXPERIENCE
 ==================================================================
-Technical Engineer
-Anukys · Malaga, Spain (Hybrid)
-10/2025 - Present
-- Consultancy serving clients and business partners in artificial
-  intelligence and computer vision.
-
 AI Engineer - Computer Vision
-SORBA.ai (Sorbotics LLC) · Jacksonville, USA (Remote)
+SORBA.ai (Sorbotics LLC) · Jacksonville, USA (Remote) - via Anukys,
+Malaga, Spain (since 10/2025)
 01/2024 - Present
 - Built and optimized CV training pipelines covering 10+ architectures
   (YOLOv5/v9, EfficientDet, MobileNet v2, RetinaNet, Faster R-CNN,
@@ -66,18 +63,20 @@ SORBA.ai (Sorbotics LLC) · Jacksonville, USA (Remote)
   concurrent training.
 
 Full-Stack Developer (Backend focus)
-Aerial Underground Construction Inc. · Kissimmee, FL, USA (Remote)
+Aerial Underground Construction Inc. · Kissimmee, FL, USA (Remote,
+concurrent with SORBA.ai)
 09/2024 - 10/2025
 - Built logistics platform backend (FastAPI + SQLAlchemy + Alembic +
   PostgreSQL): JWT auth, RBAC (3 roles), 20+ REST endpoints.
 - Implemented commissions, daily/weekly/monthly reports, PDF/Excel
   invoices (ReportLab/openpyxl), AWS S3 (boto3), scheduled jobs
   (APScheduler).
-- Delivered ~35% of a Next.js 14 + React + TypeScript frontend with
-  automated tests and Docker/Heroku deployment.
+- Developed ~35% of the frontend codebase (Next.js 14 + React +
+  TypeScript) with automated tests and Docker/Heroku deployment.
 
 Assistant Professor
 University of Havana · Faculty of Mathematics & Computer Science
+(part-time, concurrent)
 01/2023 - 01/2025
 - Taught Computer Networks, Machine Learning, AI, Operating Systems,
   and Distributed Systems; led practicals, graded exams, mentored
