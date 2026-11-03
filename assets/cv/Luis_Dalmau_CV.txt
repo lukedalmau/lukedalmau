@@ -8,7 +8,7 @@ GitHub: https://github.com/lukedalmau
 LinkedIn: https://linkedin.com/in/luis-enrique-dalmau-coopat-programmer
 
 ==================================================================
-SUMMARY
+PROFESSIONAL SUMMARY
 ==================================================================
 Full-Stack AI Engineer with 3+ years building production systems across
 computer vision, ML pipelines, and full-stack web applications. Author of
@@ -84,7 +84,7 @@ University of Havana · Faculty of Mathematics & Computer Science
   students.
 
 ==================================================================
-SELECTED PROJECTS
+PROJECTS
 ==================================================================
 - Proprietary Computer-Vision Library - author: YOLOv9
   training, auto-labeling, synthetic data, GPU management.
