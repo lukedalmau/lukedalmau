@@ -28,12 +28,11 @@
     });
     localStorage.setItem(I18N_KEY, lang);
 
-    const cvBtn = $("#cvBtn");
-    if (cvBtn) {
-      const es = lang === "es";
-      cvBtn.setAttribute("href", es ? "assets/cv/Luis_Dalmau_CV_ES.pdf" : "assets/cv/Luis_Dalmau_CV.pdf");
-      cvBtn.setAttribute("download", es ? "Luis_Dalmau_CV_ES.pdf" : "Luis_Dalmau_CV.pdf");
-    }
+    const isEs = lang === "es";
+    $$("[data-cv]").forEach((cvBtn) => {
+      cvBtn.setAttribute("href", isEs ? "assets/cv/Luis_Dalmau_CV_ES.pdf" : "assets/cv/Luis_Dalmau_CV.pdf");
+      cvBtn.setAttribute("download", isEs ? "Luis_Dalmau_CV_ES.pdf" : "Luis_Dalmau_CV.pdf");
+    });
 
     renderProjects(lang);
   }
@@ -75,7 +74,8 @@
         es: "Biblioteca propietaria de visión por computadora en Python (autor): entrenamiento e inferencia YOLOv9, gestión de datasets (YOLO/COCO/VOC), auto-etiquetado con GroundingDINO y Florence-2, datos sintéticos con Stable Diffusion y un planificador de GPU/VRAM."
       },
       tags: ["Python", "PyTorch", "YOLOv9", "Docker"],
-      links: []
+      image: "",
+      links: [{ label: { en: "Case study", es: "Caso de estudio" }, href: "#case-cv-library" }]
     },
     {
       icon: "web",
@@ -145,7 +145,8 @@
         es: "Detección industrial de fugas de gas usando imagen térmica y visión por computadora. Análisis en tiempo real de feeds de video térmico para identificar fugas en entornos industriales."
       },
       tags: ["OpenCV", "Python", "Thermal Imaging", "Industrial"],
-      links: []
+      image: "",
+      links: [{ label: { en: "Case study", es: "Caso de estudio" }, href: "#case-thermal-leaks" }]
     },
     {
       icon: "ai",
@@ -195,15 +196,19 @@
     grid.innerHTML = PROJECTS.map((p) => {
       const links = p.links.length
         ? p.links
-            .map(
-              (l) =>
-                `<a class="project-card__link" href="${l.href}" target="_blank" rel="noopener">${l.label} ↗</a>`
-            )
+            .map((l) => {
+              const label = typeof l.label === "string" ? l.label : l.label[lang];
+              const external = l.href.startsWith("http");
+              return `<a class="project-card__link" href="${l.href}"${external ? ' target="_blank" rel="noopener"' : ""}>${label} ${external ? "↗" : "→"}</a>`;
+            })
             .join("")
         : "";
+      const media = p.image
+        ? `<div class="project-card__media"><img src="${p.image}" alt="${p.title[lang]}" loading="lazy"></div>`
+        : `<div class="project-card__icon">${ICONS[p.icon]}</div>`;
       return `
         <article class="project-card reveal">
-          <div class="project-card__icon">${ICONS[p.icon]}</div>
+          ${media}
           <h3>${p.title[lang]}</h3>
           <p>${p.desc[lang]}</p>
           <div class="tags">${p.tags.map((t) => `<span>${t}</span>`).join("")}</div>
