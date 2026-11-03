@@ -395,8 +395,8 @@
     const LINES = [
       "$ whoami",
       "luis-dalmau · Full-Stack AI Engineer (Computer Vision)",
-      "$ git shortlog -sn | head -3",
-      "299 issues · 75 MRs · 22 projects · 3373+ hours",
+      "$ ls use_cases/",
+      "fire-smoke  gas-leaks  ppe  gauge-ocr  plates  tracking",
       "$ python train.py --arch yolov9-c --epochs 100",
       "Epoch 100/100 · mAP@0.5 0.964 · loss 0.032 · GPU: A100",
       "$ python optimize.py --format tensorrt",
@@ -406,7 +406,7 @@
       "$ ls /models",
       "yolov9  efficientdet  retinanet  mask-rcnn  rf-detr",
       "$ docker build -t cv-deploy .",
-      "✓ deployed · 2000 commits · 22 projects · GPU: A100"
+      "✓ deployed · TensorRT · Debian/RHEL · GPU: A100"
     ];
 
     if (reduce) { el.textContent = LINES.join("\n"); return; }

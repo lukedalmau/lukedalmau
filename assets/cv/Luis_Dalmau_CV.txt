@@ -55,8 +55,8 @@ SORBA.ai (Sorbotics LLC) · Jacksonville, USA (Remote)
 - Built and optimized CV training pipelines covering 10+ architectures
   (YOLOv5/v9, EfficientDet, MobileNet v2, RetinaNet, Faster R-CNN,
   Mask R-CNN, CenterNet, SSD).
-- Resolved 299 issues and merged 75 MRs across 22 projects (~2,000
-  commits, 3,373+ hours).
+- Shipped these capabilities across 22 company projects, from
+  dataset preparation to on-plant deployment.
 - Integrated synthetic data generation (Stable Diffusion, GAN, VAE),
   auto-labeling (GroundingDINO, Florence-2), and model optimization
   (TensorRT, TFLite).
@@ -69,13 +69,12 @@ Full-Stack Developer (Backend focus)
 Aerial Underground Construction Inc. · Kissimmee, FL, USA (Remote)
 09/2024 - 10/2025
 - Built logistics platform backend (FastAPI + SQLAlchemy + Alembic +
-  PostgreSQL, 430+ commits): JWT auth, RBAC (3 roles), 20+ REST
-  endpoints.
+  PostgreSQL): JWT auth, RBAC (3 roles), 20+ REST endpoints.
 - Implemented commissions, daily/weekly/monthly reports, PDF/Excel
   invoices (ReportLab/openpyxl), AWS S3 (boto3), scheduled jobs
   (APScheduler).
-- Contributed ~35% of a Next.js 14 + React + TypeScript frontend
-  (310+ commits) with automated tests and Docker/Heroku deployment.
+- Delivered ~35% of a Next.js 14 + React + TypeScript frontend with
+  automated tests and Docker/Heroku deployment.
 
 Assistant Professor
 University of Havana · Faculty of Mathematics & Computer Science
