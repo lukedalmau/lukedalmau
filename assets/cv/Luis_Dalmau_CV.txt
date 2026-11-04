@@ -11,33 +11,40 @@ Portfolio: https://lukedalmau.github.io/lukedalmau
 ==================================================================
 PROFESSIONAL SUMMARY
 ==================================================================
-Full-Stack AI Engineer with 3+ years building production systems across
-computer vision, ML pipelines, and full-stack web applications. Author of
-a proprietary computer-vision library used to
-train and deploy YOLOv9 object-detection models for industrial IIoT
-predictive maintenance. B.S. in Computer Science, hands-on MLOps, and a
-teaching background in AI, ML, and distributed systems. Spanish
-native, English B2 (professional working proficiency).
+AI/ML Engineer with 3+ years designing, optimizing, and deploying
+production computer-vision systems, from dataset tooling to edge
+inference on industrial hardware. Author of a proprietary computer-vision
+library used to train and deploy YOLOv9 object-detection models for IIoT
+predictive maintenance, covering 10+ detection architectures. Experienced
+in MLOps, model optimization for deployment (TensorRT, TFLite), and
+full-stack delivery with FastAPI, React, and Docker. B.S. in Computer
+Science (University of Havana) and former instructor in AI, ML, and
+distributed systems. Spanish native, English B2 (professional working
+proficiency).
 
 ==================================================================
 SKILLS
 ==================================================================
 AI & Computer Vision: Python, PyTorch, TensorFlow, OpenCV, Deep Learning,
-MLOps, Object Detection, Image Segmentation, Auto-labeling
+Object Detection, Instance Segmentation, Multi-Object Tracking, Transfer
+Learning, Model Evaluation (mAP, precision/recall), Auto-labeling
 (GroundingDINO, SAM, Florence-2), Synthetic
 Data (Stable Diffusion), Albumentations, TensorBoard, scikit-learn,
 pandas, NumPy
 
-Backend: FastAPI, SQLAlchemy 2.0, Alembic, Django, Pydantic, REST APIs,
-JWT/OAuth2, APScheduler
+Generative AI: LLM integration (Google Gemini), RAG pipelines
+(LangChain), prompt engineering
+
+Backend: Python, C++, FastAPI, SQLAlchemy 2.0, Alembic, Django, Pydantic,
+REST APIs, JWT/OAuth2, APScheduler
 
 Frontend: React 18, Next.js 14, TypeScript, Tailwind CSS, TanStack Query,
 Formik, Chart.js
 
 Databases: PostgreSQL, MongoDB, MySQL, Redis
 
-DevOps & Cloud: Docker, Docker Compose, Heroku, AWS S3, Nginx, Git,
-GitLab CI, Linux
+MLOps & DevOps: Docker, Docker Compose, ONNX export, TensorRT, TFLite,
+Git, GitLab CI, GitHub Actions, AWS S3, Heroku, Nginx, Linux
 
 Testing & Quality: pytest, pytest-asyncio, pytest-cov, moto, httpx,
 ESLint, Prettier
